@@ -1,10 +1,8 @@
-# Getting Started with Create React App
+# React-Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
-
-In the project directory, you can run:
+This portfolio was created with React.js. Portfolios are made for future employers to view potential candidates' skills and projects.
 
 ### `npm start`
 
