@@ -150,7 +150,7 @@ function ResponsiveAppBar({pageState, setPageState}) {
           >
             Halle Be
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box justifyContent="center" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {/* {pages.map((page) => ( */}
             <Button
               // key={page}
@@ -187,9 +187,9 @@ function ResponsiveAppBar({pageState, setPageState}) {
 
           <Box sx={{ flexGrow: 0 }}>
             {/* <Tooltip title="Open settings"> */}
-            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+            {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
               <Avatar alt="Halle Be" src="/static/images/avatar/2.jpg" />
-            </IconButton>
+            </IconButton> */}
             {/* </Tooltip> */}
             {/* <Menu
               sx={{ mt: "45px" }}
