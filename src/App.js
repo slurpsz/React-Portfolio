@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Nav from './components/Nav';
+import CssBaseline from "@mui/material/CssBaseline";
+import About from './components/About';
+import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import { brown } from "@mui/material/colors";
+
 
 function App() {
+  const color = brown[200]; 
+
+  const [pageState, setPageState] = useState({
+    about: true,
+    work: false,
+    contact: false,
+  }) 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Nav pageState={pageState} setPageState={setPageState} />
+      {pageState.about ? <About /> : ""}
+      {pageState.portfolio ? <Portfolio /> : ""}
+      {pageState.contact ? <Contact /> : ""}
+
+      <Footer />
+    </>
   );
 }
 
