@@ -11,7 +11,8 @@ const Portfolio = () => {
       title: "Music Forecast",
       deploy: "https://kyle-mucerino.github.io/Music-Forecast/",
       repo: "https://github.com/kyle-mucerino/Music-Forecast",
-      image: "https://github.com/kyle-mucerino/Music-Forecast/blob/main/assets/images/Screenshot%202023-03-13%20at%2011-35-16%20Music%20Forecast.png?raw=true",
+      image:
+        "https://github.com/kyle-mucerino/Music-Forecast/blob/main/assets/images/Screenshot%202023-03-13%20at%2011-35-16%20Music%20Forecast.png?raw=true",
     },
     {
       title: "Project Films",
@@ -21,29 +22,30 @@ const Portfolio = () => {
         "https://github.com/JakeDish/movie-database/raw/main/image/home.png",
     },
     {
-      title: "Coming Soon!",
-      deploy: "https://github.com/",
-      repo: "https://github.com/",
-      image: "https://picsum.photos/200",
+      title: "Rest Easy Recipes",
+      deploy: "https://stark-fortress-55974.herokuapp.com/",
+      repo: "https://github.com/PintoDrop/resteasyrecipe",
+      image:
+        "https://github.com/PintoDrop/resteasyrecipe/raw/main/client/src/Images/homepage.JPG",
     },
-    {
-      title: "Coming Soon!",
-      deployed: "https://github.com/",
-      repo: "https://github.com/",
-      image: "https://picsum.photos/200",
-    },
-    {
-      title: "Coming Soon!",
-      deploy: "https://github.com/",
-      repo: "https://github.com/",
-      image: "https://picsum.photos/200",
-    },
-    {
-      title: "Coming Soon!",
-      deploy: "https://github.com/",
-      repo: "https://github.com/",
-      image: "https://picsum.photos/200",
-    },
+    // {
+    //   title: "Coming Soon!",
+    //   deployed: "https://github.com/",
+    //   repo: "https://github.com/",
+    //   image: "https://picsum.photos/200",
+    // },
+    // {
+    //   title: "Coming Soon!",
+    //   deploy: "https://github.com/",
+    //   repo: "https://github.com/",
+    //   image: "https://picsum.photos/200",
+    // },
+    // {
+    //   title: "Coming Soon!",
+    //   deploy: "https://github.com/",
+    //   repo: "https://github.com/",
+    //   image: "https://picsum.photos/200",
+    // },
   ];
 
   return (
