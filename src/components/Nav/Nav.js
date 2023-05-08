@@ -11,7 +11,6 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import Resume from "../../assets/resume/HalleBeResume.pdf"
 import { createTheme } from "@mui/material/styles";
 import { purple } from "@mui/material/colors";
@@ -69,9 +68,8 @@ function ResponsiveAppBar({pageState, setPageState}) {
     <AppBar style={{ background: "#795548" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
             component="a"
             href="/"
@@ -131,7 +129,6 @@ function ResponsiveAppBar({pageState, setPageState}) {
               </MenuItem>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -151,68 +148,33 @@ function ResponsiveAppBar({pageState, setPageState}) {
             Halle Be
           </Typography>
           <Box justifyContent="center" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {/* {pages.map((page) => ( */}
             <Button
-              // key={page}
               onClick={handleOpenAbout}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               About
             </Button>
             <Button
-              // key={page}
               onClick={handleOpenPortfolio}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Portfolio
             </Button>
             <Button
-              // key={page}
               onClick={handleOpenContact}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Contact
             </Button>
-            <a href={Resume}>
+            {/* <a href={Resume}> */}
               <Button
-                // key={page}
                 onClick={handleOpenResume}
                 sx={{ my: 2, color: "white", display: "block" }}
+                href={Resume}
               >
                 Resume
               </Button>
-            </a>
-            {/* ))} */}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            {/* <Tooltip title="Open settings"> */}
-            {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              <Avatar alt="Halle Be" src="/static/images/avatar/2.jpg" />
-            </IconButton> */}
-            {/* </Tooltip> */}
-            {/* <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu> */}
+            {/* </a> */}
           </Box>
         </Toolbar>
       </Container>

@@ -7,7 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
     <>
-      <Grid container justifyContent="center" spacing="{2}" padding={2}>
+      <Grid container justifyContent="center" spacing={2} padding={4}>
         <Grid item>
           <a href="https://github.com/slurpsz">
             <GitHubIcon></GitHubIcon>
