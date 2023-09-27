@@ -7,46 +7,46 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
+// import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
+// import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import Resume from "../../assets/resume/HalleBeResume.pdf"
-import { createTheme } from "@mui/material/styles";
-import { purple } from "@mui/material/colors";
+import Resume from "../../assets/resume/HalleResume.pdf"
+// import { createTheme } from "@mui/material/styles";
+// import { purple } from "@mui/material/colors";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: purple[500],
-    },
-    secondary: {
-      main: "#f44336",
-    },
-  },
-});
+// const theme = createTheme({
+//   palette: {
+//     primary: {
+//       main: purple[500],
+//     },
+//     secondary: {
+//       main: "#f44336",
+//     },
+//   },
+// });
 
-const pages = ["About", "Portfolio", "Contact", "Resume"];
+// const pages = ["About", "Portfolio", "Contact", "Resume"];
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar({pageState, setPageState}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
   const handleOpenAbout = () => {
     setPageState({...pageState, about: true, portfolio: false, contact: false, resume: false})

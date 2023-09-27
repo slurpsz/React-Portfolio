@@ -15,43 +15,22 @@ const Portfolio = () => {
         "https://github.com/kyle-mucerino/Music-Forecast/blob/main/assets/images/Screenshot%202023-03-13%20at%2011-35-16%20Music%20Forecast.png?raw=true",
     },
     {
-      title: "Project Films",
-      deploy: "https://uciprojfilms.herokuapp.com/",
-      repo: "https://github.com/JakeDish/movie-database",
-      image:
-        "https://github.com/JakeDish/movie-database/raw/main/image/home.png",
-    },
-    {
       title: "Rest Easy Recipes",
       deploy: "https://stark-fortress-55974.herokuapp.com/",
       repo: "https://github.com/PintoDrop/resteasyrecipe",
       image:
         "https://github.com/PintoDrop/resteasyrecipe/raw/main/client/src/Images/homepage.JPG",
     },
-    // {
-    //   title: "Coming Soon!",
-    //   deployed: "https://github.com/",
-    //   repo: "https://github.com/",
-    //   image: "https://picsum.photos/200",
-    // },
-    // {
-    //   title: "Coming Soon!",
-    //   deploy: "https://github.com/",
-    //   repo: "https://github.com/",
-    //   image: "https://picsum.photos/200",
-    // },
-    // {
-    //   title: "Coming Soon!",
-    //   deploy: "https://github.com/",
-    //   repo: "https://github.com/",
-    //   image: "https://picsum.photos/200",
-    // },
+
   ];
 
   return (
     <>
     <Grid container justifyContent="center">
-      <h1>My Projects</h1>
+      <div>
+
+      <h1 className='text-3xl font-bold my-4'>My Projects</h1>
+      </div>
     </Grid>
     <Grid container spacing={20} padding={20} justifyContent="center">
       {projects.map(project => 

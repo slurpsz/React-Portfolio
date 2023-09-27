@@ -17,9 +17,9 @@ const Footer = () => {
             <LinkedInIcon></LinkedInIcon>
           </a>
 
-          <a href="https://www.instagram.com/">
+          {/* <a href="https://www.instagram.com/">
             <InstagramIcon></InstagramIcon>
-          </a>
+          </a> */}
         </Grid>
       </Grid>
     </>
