@@ -5,7 +5,7 @@ import Films from '../../assets/projects/Project-Films.png';
 import Card from '../Card'
 
 
-const Portfolio = () => {
+const Projects = () => {
   const projects = [
     {
       title: "Music Forecast",
@@ -45,4 +45,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Projects

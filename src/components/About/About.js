@@ -28,7 +28,7 @@ const About = () => {
             commitment, I've honed my skills in front-end and back-end
             development. I thrive in collaborative environments, continuosuly
             learning and implementing new technologies to enhance user
-            experiences. With a strong fouindation in various programming
+            experiences. With a strong foundation in various programming
             languages and frameworks, I take pride in delivering efficient,
             scalable, and robust solutions.
           </p>
@@ -38,7 +38,7 @@ const About = () => {
           <div>
           <p className='my-4'>
             When I'm not coding, you'll find me playing pickleball, rock
-            climbing, or unwiding with a book. Let's build something amazing
+            climbing, or unwinding with a book. Let's build something amazing
             together!
           </p>
           </div>

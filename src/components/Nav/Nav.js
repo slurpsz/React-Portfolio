@@ -11,7 +11,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 // import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import Resume from "../../assets/resume/HalleResume.pdf"
+import Resume from "../../assets/resume/HalleBeResume.pdf"
 // import { createTheme } from "@mui/material/styles";
 // import { purple } from "@mui/material/colors";
 
@@ -119,7 +119,7 @@ function ResponsiveAppBar({pageState, setPageState}) {
                 <Typography textAlign="center">About</Typography>
               </MenuItem>
               <MenuItem onClick={handleOpenPortfolio}>
-                <Typography textAlign="center">Portfolio</Typography>
+                <Typography textAlign="center">Projects</Typography>
               </MenuItem>
               <MenuItem onClick={handleOpenContact}>
                 <Typography textAlign="center">Contact</Typography>
@@ -158,7 +158,7 @@ function ResponsiveAppBar({pageState, setPageState}) {
               onClick={handleOpenPortfolio}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              Portfolio
+              Projects
             </Button>
             <Button
               onClick={handleOpenContact}
