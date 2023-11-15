@@ -11,7 +11,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 // import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import Resume from "../../assets/resume/HalleBeResume.pdf"
+import Resume from "../../assets/resume/HalleBResume.pdf"
 // import { createTheme } from "@mui/material/styles";
 // import { purple } from "@mui/material/colors";
 
@@ -72,7 +72,7 @@ function ResponsiveAppBar({pageState, setPageState}) {
             variant="h4"
             noWrap
             component="a"
-            href="/"
+            // onClick={handleOpenAbout}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -147,7 +147,10 @@ function ResponsiveAppBar({pageState, setPageState}) {
           >
             Halle Be
           </Typography>
-          <Box justifyContent="center" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            justifyContent="center"
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+          >
             <Button
               onClick={handleOpenAbout}
               sx={{ my: 2, color: "white", display: "block" }}
@@ -167,13 +170,13 @@ function ResponsiveAppBar({pageState, setPageState}) {
               Contact
             </Button>
             {/* <a href={Resume}> */}
-              <Button
-                onClick={handleOpenResume}
-                sx={{ my: 2, color: "white", display: "block" }}
-                href={Resume}
-              >
-                Resume
-              </Button>
+            <Button
+              onClick={handleOpenResume}
+              sx={{ my: 2, color: "white", display: "block" }}
+              href={Resume}
+            >
+              Resume
+            </Button>
             {/* </a> */}
           </Box>
         </Toolbar>
